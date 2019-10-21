@@ -47,6 +47,7 @@ def generator_test(b_s, imgs_test_path):
         yield [preprocess_images(images[counter:counter + b_s], shape_r, shape_c), gaussian]
         counter = (counter + b_s) % len(images)
 
+
 if __name__ == '__main__':
     if len(sys.argv) == 1:
         raise NotImplementedError
